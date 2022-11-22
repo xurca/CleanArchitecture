@@ -1,17 +1,17 @@
-﻿using Domain.Primitives;
+﻿using Domain.Shared;
 
 namespace Domain.Entities;
 
-public sealed class Webinar : Entity
+public sealed class Sample : Entity
 {
-    public Webinar(Guid id, string name, DateTime scheduledOn)
+    public Sample(Guid id, string name, DateTime scheduledOn)
     {
         Id = id;
         Name = name;
         ScheduledOn = scheduledOn;
     }
 
-    private Webinar() { }
+    private Sample() { }
 
     public Guid Id { get; private set; }
 

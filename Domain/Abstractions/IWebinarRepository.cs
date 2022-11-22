@@ -4,6 +4,6 @@ namespace Domain.Abstractions
 {
     public interface IWebinarRepository
     {
-        void Insert(Webinar webinar);
+        void Insert(Sample webinar);
     }
 }
