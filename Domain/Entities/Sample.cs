@@ -5,6 +5,7 @@ namespace Domain.Entities;
 public sealed class Sample : Entity
 {
     public Sample(Guid id, string name, DateTime scheduledOn)
+        : base(id)
     {
         Id = id;
         Name = name;
@@ -12,8 +13,6 @@ public sealed class Sample : Entity
     }
 
     private Sample() { }
-
-    public Guid Id { get; private set; }
 
     public string Name { get; private set; }
 
